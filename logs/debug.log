@@ -2448,3 +2448,150 @@ From 162.251.61.47 icmp_seq=1 Destination Port Unreachable
 2025-07-10 22:19:08 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25272
 2025-07-10 22:19:08 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25284
 2025-07-10 22:19:08 [DEBUG] [VALIDATION] TCP connection failed for 103.27.238.214:80
+2025-07-10 22:19:11 [DEBUG] [VALIDATION] Ping failed for 79.132.133.38: PING 79.132.133.38 (79.132.133.38) 56(84) bytes of data.
+From 79.132.129.17 icmp_seq=1 Destination Host Unreachable
+
+--- 79.132.133.38 ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 45.80.190.64: PING 45.80.190.64 (45.80.190.64) 56(84) bytes of data.
+
+--- 45.80.190.64 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 138.2.45.89: PING 138.2.45.89 (138.2.45.89) 56(84) bytes of data.
+
+--- 138.2.45.89 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 8.210.166.114: PING 8.210.166.114 (8.210.166.114) 56(84) bytes of data.
+
+--- 8.210.166.114 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 93.179.112.70: PING 93.179.112.70 (93.179.112.70) 56(84) bytes of data.
+
+--- 93.179.112.70 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 13.215.49.89: PING 13.215.49.89 (13.215.49.89) 56(84) bytes of data.
+
+--- 13.215.49.89 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 138.2.83.217: PING 138.2.83.217 (138.2.83.217) 56(84) bytes of data.
+
+--- 138.2.83.217 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 170.64.130.150: PING 170.64.130.150 (170.64.130.150) 56(84) bytes of data.
+
+--- 170.64.130.150 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 198.41.212.150: PING 198.41.212.150 (198.41.212.150) 56(84) bytes of data.
+
+--- 198.41.212.150 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 167.88.63.79: PING 167.88.63.79 (167.88.63.79) 56(84) bytes of data.
+
+--- 167.88.63.79 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 54.178.60.213: PING 54.178.60.213 (54.178.60.213) 56(84) bytes of data.
+
+--- 54.178.60.213 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 43.128.225.220: PING 43.128.225.220 (43.128.225.220) 56(84) bytes of data.
+
+--- 43.128.225.220 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 43.154.172.79: PING 43.154.172.79 (43.154.172.79) 56(84) bytes of data.
+
+--- 43.154.172.79 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 109.122.208.205: PING 109.122.208.205 (109.122.208.205) 56(84) bytes of data.
+
+--- 109.122.208.205 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 138.2.39.67: PING 138.2.39.67 (138.2.39.67) 56(84) bytes of data.
+
+--- 138.2.39.67 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for hn.xiaohouzi.club:18463
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for hn.xiaohouzi.club:48462
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for hn.xiaohouzi.club:61003
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for sh.xiaohouzi.club:12468
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 149.202.82.172:5600
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 45.129.2.237:10258
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 47.242.1.160:36298
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 106.55.187.139:8448
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for lav002.jd0001.top: PING expired.hichina.com (47.91.170.222) 56(84) bytes of data.
+
+--- expired.hichina.com ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for data-hk-v2.shwjfkw.cn: PING data-hk-v2.shwjfkw.cn (59.24.3.174) 56(84) bytes of data.
+
+--- data-hk-v2.shwjfkw.cn ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] Progress: validation_progress
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 162.251.61.47: PING 162.251.61.47 (162.251.61.47) 56(84) bytes of data.
+From 162.251.61.47 icmp_seq=1 Destination Port Unreachable
+
+--- 162.251.61.47 ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] Ping failed for 162.251.61.47: PING 162.251.61.47 (162.251.61.47) 56(84) bytes of data.
+From 162.251.61.47 icmp_seq=1 Destination Port Unreachable
+
+--- 162.251.61.47 ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 38.91.107.37:8118
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 38.91.107.37:4444
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 38.91.107.37:7001
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 172.99.188.99:2376
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:24003
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:24007
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25259
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25279
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25268
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25241
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25295
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 14.29.124.168:25230
+2025-07-10 22:19:13 [DEBUG] [VALIDATION] TCP connection failed for 103.103.245.125:50418
+2025-07-10 22:19:14 [DEBUG] [VALIDATION] Ping failed for 77.83.254.18: PING 77.83.254.18 (77.83.254.18) 56(84) bytes of data.
+From 192.30.242.202 icmp_seq=1 Destination Host Unreachable
+
+--- 77.83.254.18 ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+
+
+2025-07-10 22:19:14 [INFO] Received shutdown signal, starting graceful shutdown...
