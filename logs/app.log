@@ -1,0 +1,51 @@
+2025-07-10 22:16:35 [INFO] Cron jobs initialized successfully
+2025-07-10 22:16:35 [INFO] Initializing VPN Aggregator...
+2025-07-10 22:16:35 [INFO] Stats manager initialized
+2025-07-10 22:16:35 [INFO] Cache manager initialized
+2025-07-10 22:16:35 [INFO] VPN Aggregator initialized successfully
+2025-07-10 22:16:35 [INFO] Performing initial VPN config collection...
+2025-07-10 22:16:35 [INFO] Starting VPN config collection and processing...
+2025-07-10 22:16:35 [INFO] Collecting from 12 sources...
+2025-07-10 22:16:35 [INFO] ✅ Successfully collected from ClashX Free Nodes (4212 chars)
+2025-07-10 22:16:35 [INFO] ✅ Successfully collected from Clash Meta Configs (8021 chars)
+2025-07-10 22:16:35 [INFO] ✅ Successfully collected from Free Clash Configs (154528 chars)
+2025-07-10 22:16:35 [WARN] ❌ Empty response from V2Ray Collection
+2025-07-10 22:16:35 [WARN] ❌ Empty response from V2Ray Free Nodes
+2025-07-10 22:16:36 [WARN] ❌ Empty response from Hysteria Nodes
+2025-07-10 22:16:36 [WARN] ❌ Empty response from Trojan Free Nodes
+2025-07-10 22:16:36 [WARN] ❌ Empty response from ShadowSocks Free
+2025-07-10 22:16:36 [WARN] ❌ Empty response from Reality Nodes
+2025-07-10 22:16:36 [INFO] ✅ Successfully collected from API Proxy List (20 chars)
+2025-07-10 22:16:37 [INFO] ✅ Successfully collected from High Quality Nodes (77472 chars)
+2025-07-10 22:16:37 [INFO] ✅ Successfully collected from Multi Protocol Collection (1336021 chars)
+2025-07-10 22:16:37 [INFO] Collected data from 6/12 sources
+2025-07-10 22:16:37 [ERROR] Failed to parse JSON API data: Unexpected token 'I', "Invalid API request." is not valid JSON
+2025-07-10 22:16:37 [INFO] Total parsed nodes: 4962
+2025-07-10 22:16:37 [INFO] Removed 110 duplicate nodes, 4852 unique remaining
+2025-07-10 22:16:37 [INFO] Validating 4852 nodes...
+2025-07-10 22:16:54 [INFO] Received shutdown signal, starting graceful shutdown...
+2025-07-10 22:17:01 [INFO] Cron jobs initialized successfully
+2025-07-10 22:17:01 [INFO] Initializing VPN Aggregator...
+2025-07-10 22:17:01 [INFO] Stats manager initialized
+2025-07-10 22:17:01 [INFO] Cache manager initialized
+2025-07-10 22:17:01 [INFO] VPN Aggregator initialized successfully
+2025-07-10 22:17:01 [INFO] Performing initial VPN config collection...
+2025-07-10 22:17:01 [INFO] Starting VPN config collection and processing...
+2025-07-10 22:17:01 [INFO] Collecting from 12 sources...
+2025-07-10 22:17:01 [WARN] ❌ Empty response from V2Ray Free Nodes
+2025-07-10 22:17:01 [WARN] ❌ Empty response from V2Ray Collection
+2025-07-10 22:17:01 [INFO] ✅ Successfully collected from ClashX Free Nodes (4212 chars)
+2025-07-10 22:17:01 [INFO] ✅ Successfully collected from Clash Meta Configs (8021 chars)
+2025-07-10 22:17:01 [INFO] ✅ Successfully collected from Free Clash Configs (154528 chars)
+2025-07-10 22:17:02 [WARN] ❌ Empty response from Reality Nodes
+2025-07-10 22:17:02 [WARN] ❌ Empty response from Hysteria Nodes
+2025-07-10 22:17:02 [WARN] ❌ Empty response from Trojan Free Nodes
+2025-07-10 22:17:02 [WARN] ❌ Empty response from ShadowSocks Free
+2025-07-10 22:17:02 [INFO] ✅ Successfully collected from API Proxy List (20 chars)
+2025-07-10 22:17:03 [INFO] ✅ Successfully collected from High Quality Nodes (77472 chars)
+2025-07-10 22:17:03 [INFO] ✅ Successfully collected from Multi Protocol Collection (1336021 chars)
+2025-07-10 22:17:03 [INFO] Collected data from 6/12 sources
+2025-07-10 22:17:03 [ERROR] Failed to parse JSON API data: Unexpected token 'I', "Invalid API request." is not valid JSON
+2025-07-10 22:17:03 [INFO] Total parsed nodes: 4962
+2025-07-10 22:17:03 [INFO] Removed 110 duplicate nodes, 4852 unique remaining
+2025-07-10 22:17:03 [INFO] Validating 4852 nodes...
