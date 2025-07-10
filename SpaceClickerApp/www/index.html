@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космический Кликер 🚀</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Космический Кликер">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <header>
+        <h1>🚀 Космический Кликер</h1>
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-label">Энергия:</span>
+                <span id="score" class="stat-value">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">В секунду:</span>
+                <span id="energyPerSec" class="stat-value">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Всего кликов:</span>
+                <span id="totalClicks" class="stat-value">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Время игры:</span>
+                <span id="playTime" class="stat-value">0с</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="click-area">
+                <button id="clickButton" class="click-button">
+                    <div class="button-content">
+                        <div class="planet">🌍</div>
+                        <div class="click-text">КЛИК!</div>
+                        <div class="energy-gain">+<span id="clickPower">1</span></div>
+                    </div>
+                    <div class="click-effect"></div>
+                </button>
+                
+                <div class="floating-numbers"></div>
+            </div>
+
+            <div class="upgrades-panel">
+                <h2>🛸 Улучшения</h2>
+                
+                <!-- Вкладки для разных категорий -->
+                <div class="upgrade-tabs">
+                    <button class="tab-button active" data-tab="basic">Базовые</button>
+                    <button class="tab-button" data-tab="advanced">Продвинутые</button>
+                    <button class="tab-button" data-tab="prestige">Престиж</button>
+                </div>
+                
+                <div class="upgrades-container" id="basic-upgrades">
+                    <div class="upgrade" data-upgrade="cursor">
+                        <div class="upgrade-icon">👆</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Космический Палец</div>
+                            <div class="upgrade-description">+1 энергии за клик</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="cursorCost">15</span></span>
+                                <span class="upgrade-count">Уровень: <span id="cursorCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="generator">
+                        <div class="upgrade-icon">⚡</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Энерго-генератор</div>
+                            <div class="upgrade-description">+1 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="generatorCost">100</span></span>
+                                <span class="upgrade-count">Количество: <span id="generatorCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="factory">
+                        <div class="upgrade-icon">🏭</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Космо-завод</div>
+                            <div class="upgrade-description">+8 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="factoryCost">1100</span></span>
+                                <span class="upgrade-count">Количество: <span id="factoryCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="mine">
+                        <div class="upgrade-icon">⛏️</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Астероидная Шахта</div>
+                            <div class="upgrade-description">+47 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="mineCost">12000</span></span>
+                                <span class="upgrade-count">Количество: <span id="mineCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="spaceship">
+                        <div class="upgrade-icon">🛸</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Звездолёт</div>
+                            <div class="upgrade-description">+260 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="spaceshipCost">130000</span></span>
+                                <span class="upgrade-count">Количество: <span id="spaceshipCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Продвинутые улучшения -->
+                <div class="upgrades-container hidden" id="advanced-upgrades">
+                    <div class="upgrade" data-upgrade="blackhole">
+                        <div class="upgrade-icon">🕳️</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Чёрная Дыра</div>
+                            <div class="upgrade-description">+1500 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="blackholeCost">1500000</span></span>
+                                <span class="upgrade-count">Количество: <span id="blackholeCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upgrade" data-upgrade="galaxy">
+                        <div class="upgrade-icon">🌌</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Галактика</div>
+                            <div class="upgrade-description">+8500 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="galaxyCost">15000000</span></span>
+                                <span class="upgrade-count">Количество: <span id="galaxyCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upgrade" data-upgrade="universe">
+                        <div class="upgrade-icon">🌠</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Вселенная</div>
+                            <div class="upgrade-description">+50000 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="universeCost">150000000</span></span>
+                                <span class="upgrade-count">Количество: <span id="universeCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Престиж улучшения -->
+                <div class="upgrades-container hidden" id="prestige-upgrades">
+                    <div class="prestige-info">
+                        <h3>🏆 Система Престижа</h3>
+                        <p>Сбросьте прогресс и получите звёзды престижа для постоянных бонусов!</p>
+                        <div class="prestige-stats">
+                            <div>Звёзды престижа: <span id="prestigeStars">0</span> ⭐</div>
+                            <div>Мультипликатор: x<span id="prestigeMultiplier">1</span></div>
+                            <div>Получите при сбросе: <span id="prestigeGain">0</span> ⭐</div>
+                        </div>
+                        <button id="prestigeButton" class="prestige-button">🔄 Престиж</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Панель достижений -->
+            <div class="achievements-panel">
+                <h2>🏆 Достижения</h2>
+                <div class="achievements-container" id="achievements">
+                    <!-- Достижения будут добавлены динамически -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>💫 Исследуйте космос, собирайте энергию, покоряйте галактику! 💫</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
