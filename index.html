@@ -20,6 +20,14 @@
                 <span class="stat-label">В секунду:</span>
                 <span id="energyPerSec" class="stat-value">0</span>
             </div>
+            <div class="stat">
+                <span class="stat-label">Всего кликов:</span>
+                <span id="totalClicks" class="stat-value">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Время игры:</span>
+                <span id="playTime" class="stat-value">0с</span>
+            </div>
         </div>
     </header>
 
@@ -40,7 +48,15 @@
 
             <div class="upgrades-panel">
                 <h2>🛸 Улучшения</h2>
-                <div class="upgrades-container">
+                
+                <!-- Вкладки для разных категорий -->
+                <div class="upgrade-tabs">
+                    <button class="tab-button active" data-tab="basic">Базовые</button>
+                    <button class="tab-button" data-tab="advanced">Продвинутые</button>
+                    <button class="tab-button" data-tab="prestige">Престиж</button>
+                </div>
+                
+                <div class="upgrades-container" id="basic-upgrades">
                     <div class="upgrade" data-upgrade="cursor">
                         <div class="upgrade-icon">👆</div>
                         <div class="upgrade-info">
@@ -100,6 +116,67 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Продвинутые улучшения -->
+                <div class="upgrades-container hidden" id="advanced-upgrades">
+                    <div class="upgrade" data-upgrade="blackhole">
+                        <div class="upgrade-icon">🕳️</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Чёрная Дыра</div>
+                            <div class="upgrade-description">+1500 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="blackholeCost">1500000</span></span>
+                                <span class="upgrade-count">Количество: <span id="blackholeCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upgrade" data-upgrade="galaxy">
+                        <div class="upgrade-icon">🌌</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Галактика</div>
+                            <div class="upgrade-description">+8500 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="galaxyCost">15000000</span></span>
+                                <span class="upgrade-count">Количество: <span id="galaxyCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upgrade" data-upgrade="universe">
+                        <div class="upgrade-icon">🌠</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Вселенная</div>
+                            <div class="upgrade-description">+50000 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="universeCost">150000000</span></span>
+                                <span class="upgrade-count">Количество: <span id="universeCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Престиж улучшения -->
+                <div class="upgrades-container hidden" id="prestige-upgrades">
+                    <div class="prestige-info">
+                        <h3>🏆 Система Престижа</h3>
+                        <p>Сбросьте прогресс и получите звёзды престижа для постоянных бонусов!</p>
+                        <div class="prestige-stats">
+                            <div>Звёзды престижа: <span id="prestigeStars">0</span> ⭐</div>
+                            <div>Мультипликатор: x<span id="prestigeMultiplier">1</span></div>
+                            <div>Получите при сбросе: <span id="prestigeGain">0</span> ⭐</div>
+                        </div>
+                        <button id="prestigeButton" class="prestige-button">🔄 Престиж</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Панель достижений -->
+            <div class="achievements-panel">
+                <h2>🏆 Достижения</h2>
+                <div class="achievements-container" id="achievements">
+                    <!-- Достижения будут добавлены динамически -->
                 </div>
             </div>
         </div>
