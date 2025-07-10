@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космический Кликер 🚀</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <header>
+        <h1>🚀 Космический Кликер</h1>
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-label">Энергия:</span>
+                <span id="score" class="stat-value">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">В секунду:</span>
+                <span id="energyPerSec" class="stat-value">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="click-area">
+                <button id="clickButton" class="click-button">
+                    <div class="button-content">
+                        <div class="planet">🌍</div>
+                        <div class="click-text">КЛИК!</div>
+                        <div class="energy-gain">+<span id="clickPower">1</span></div>
+                    </div>
+                    <div class="click-effect"></div>
+                </button>
+                
+                <div class="floating-numbers"></div>
+            </div>
+
+            <div class="upgrades-panel">
+                <h2>🛸 Улучшения</h2>
+                <div class="upgrades-container">
+                    <div class="upgrade" data-upgrade="cursor">
+                        <div class="upgrade-icon">👆</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Космический Палец</div>
+                            <div class="upgrade-description">+1 энергии за клик</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="cursorCost">15</span></span>
+                                <span class="upgrade-count">Уровень: <span id="cursorCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="generator">
+                        <div class="upgrade-icon">⚡</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Энерго-генератор</div>
+                            <div class="upgrade-description">+1 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="generatorCost">100</span></span>
+                                <span class="upgrade-count">Количество: <span id="generatorCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="factory">
+                        <div class="upgrade-icon">🏭</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Космо-завод</div>
+                            <div class="upgrade-description">+8 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="factoryCost">1100</span></span>
+                                <span class="upgrade-count">Количество: <span id="factoryCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="mine">
+                        <div class="upgrade-icon">⛏️</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Астероидная Шахта</div>
+                            <div class="upgrade-description">+47 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="mineCost">12000</span></span>
+                                <span class="upgrade-count">Количество: <span id="mineCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade" data-upgrade="spaceship">
+                        <div class="upgrade-icon">🛸</div>
+                        <div class="upgrade-info">
+                            <div class="upgrade-name">Звездолёт</div>
+                            <div class="upgrade-description">+260 энергии в секунду</div>
+                            <div class="upgrade-stats">
+                                <span class="upgrade-cost">Цена: <span id="spaceshipCost">130000</span></span>
+                                <span class="upgrade-count">Количество: <span id="spaceshipCount">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>💫 Исследуйте космос, собирайте энергию, покоряйте галактику! 💫</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
